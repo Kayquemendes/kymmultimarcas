@@ -1,0 +1,14 @@
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="'/inicio'" routerLinkActive="active">Inicio</a></li>
+            <li class="breadcrumb-item" routerLink="'/bermudas'" routerLinkActive="active"> Kymmultimarcas Bermudas</li>
+        </ol>
+    </nav>
+</div>
+<div class="container justify-content-arond">
+    <div class="item-lista" *ngFor="let Kymmulti of Kymmultimarcas">
+        <img [src]="Kymmulti.pathImage" alt="imagem Produto">
+        <h4> {{Kymmulti.name}} </h4>
+    </div>
+</div>
